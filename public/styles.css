@@ -1,0 +1,12 @@
+:focus {
+    outline: 2px solid red; /* change the color and width of the outline */
+    outline-offset: 2px; /* add some distance between the outline and the element */
+  }
+  .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: blue;
+    position: absolute;
+    transition: all 0.2s ease-out; /* Add a transition for smooth movement */
+  }

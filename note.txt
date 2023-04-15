@@ -1,0 +1,12 @@
+Livechat CSS Price list
+• Basic (Start From IDR 70K) :
+  - Chat only (No supperchat dll style default dari YouTube)
+  - Support pembeda warna antara : Owner, Moderator, Viewer biasa, dan membership
+  - Bentuk dan warna bisa disesuaikan dengan permintaan
+
+• Full  (Start From IDR 85K) :
+  - Sama aja tapi kamu dapet styling supperchat, member join, member gift dll
+
+Note :
+- Keep in mind kalo kita hanya bisa membuat bentuk chat yg "codingable", gimana tuh bang maksudnya? Itu bisa didiskusikan dulu apakah bentuk kayak gitu bisa "codingable" atau nggak
+- Warna dari supperchat tidak akan saya ubah (dibiarkan sesuai warna supperchat karena alasan "supperchat tier") jadi kita akan mengubah bentuknya saja

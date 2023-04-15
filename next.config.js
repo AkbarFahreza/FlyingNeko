@@ -4,3 +4,10 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+
+module.exports = {
+  
+  images: {
+    domains: ['pbs.twimg.com','res.cloudinary.com']
+  },
+};
