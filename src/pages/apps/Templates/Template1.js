@@ -1,5 +1,7 @@
+/* eslint-disable */
 import React, { useState } from "react";
 import Chats from "../components/Chats";
+import Link from "next/link";
 
 function App() {
   const [OwnerColor, setOwnerColor] = useState("#ff7b00");
@@ -46,12 +48,12 @@ function App() {
   };
   return (
     <div className="flex flex-col py-10 justify-center align-middle min-h-screen">
-      <a
+      <Link
         href="https://trakteer.id/Revii/showcase/live-chat-overlay-template-1-svNNs"
         className="justify-center text-center font-bold"
       >
         [ Template 1 ] Youtube Live Chat Widget/Overlay "Rounded Border"
-      </a>
+      </Link>
       <p className="justify-center text-center mb-10">
         Color Editor Template (From Trakteer)
       </p>
@@ -202,18 +204,18 @@ function App() {
         </div>
       </div>
       <div className="flex justify-center mt-5 flex-col lg:flex-row cursor-pointer">
-        <a
+        <Link
           className="hover:ease-in-out hover:duration-300 my-2 lg:mx-2 rounded-lg py-2 px-16 font-semibold text-white align-middle bg-secondary hover:bg-aksen mx-auto"
           href="/apps/TemplatesMenu"
         >
           Templates Menu
-        </a>
-        <a
+        </Link>
+        <Link
           className="hover:ease-in-out hover:duration-300 my-2 lg:mx-2 rounded-lg py-2 px-12 font-semibold text-secondary align-middle text-center bg-white hover:bg-aksen hover:text-white"
           href="/"
         >
           Back To Home
-        </a>
+        </Link>
       </div>
     </div>
   );

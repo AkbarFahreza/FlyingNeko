@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Head from 'next/head';
+import Link from "next/link";
 export default function TemplatesMenu() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
@@ -18,9 +19,9 @@ export default function TemplatesMenu() {
       <p className="font-bold">
         Halaman masih dalam tahap pengembangan, nantikan yachh!~
       </p>
-      <a className="p-2 rounded-md mt-10 bg-aksen hover:bg-secondary text-white mx-auto" href="/">
+      <Link className="p-2 rounded-md mt-10 bg-aksen hover:bg-secondary text-white mx-auto" href="/">
         back
-      </a>
+      </Link>
       <div
         className="transition-all duration-200 ease-in-out absolute top-64"
         style={{ left: mousePos.x, top: mousePos.y }}
