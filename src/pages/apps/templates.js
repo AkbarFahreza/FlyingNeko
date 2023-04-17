@@ -11,7 +11,7 @@ export default function TemplatesMenu() {
       onMouseMove={handleMouseMove}
     >
       <LCMenusCard
-        Tamnel="https://res.cloudinary.com/dxcmt3zoc/image/upload/v1681281078/Tamnel_Fika_1_k0zpnn.png"
+        Tamnel="https://trakteer.id/storage/images/content/l0865yej9k63bgme/ct-m5m7xmrNXVziWa9znJc9qHU1ifkDiPYv1679830413.jpg"
         Judul='[ Template 1 ] Youtube Live Chat Widget/Overlay "Rounded Border"'
         TemplateLink="https://trakteer.id/Revii/showcase/live-chat-overlay-template-1-svNNs"
         LinkEdit="templates/template1"
