@@ -14,7 +14,7 @@ export default function Home() {
         src="./blob(1).svg"
         width={600}
         height={400}
-        alt="Ini Foto Profil"
+        alt="Blob"
         className="justify-center absolute rounded-full -z-50 bottom-0 -right-52 md:-right-72 md:-bottom-52 animate-spin-slow blur-lg"
       ></Image>
       <Image
@@ -32,17 +32,23 @@ export default function Home() {
           <code>
             Hallo, saya adalah Front End Developer pemula yang juga seorang
             apasih namanya yang open comisson itu? ya intinya aku juga pemula
-            dalam hal itu dan jasa yang saya tawarkan adalah <span className="text-aksen">Styling YouTube
-            LiveChat CSS </span> untuk Overlay Streaming. Saya juga beberapa membagikan
-            Template untuk kalian pakai di Trakteer
+            dalam hal itu dan jasa yang saya tawarkan adalah{" "}
+            <span className="text-aksen">Styling YouTube LiveChat CSS </span>{" "}
+            untuk Overlay Streaming. Saya juga beberapa membagikan Template
+            untuk kalian pakai di Trakteer
           </code>
         </div>
       </div>
       <Icons />
-      <Buttons />
+      <Buttons
+        LinkDir="https://trakteer.id/revii"
+        Apah="Trakteer"
+        LinkDir1="https://trakteer.id/revii"
+        Apah1="Sama Aja"
+      />
       <TabsSection />
       <div className="sticky bg-white px-2 py-1 text-black rounded-md mt-5 flex justify-center text-center">
-        <p>Ver : 1.0.0</p>
+        <p>Ver : 1.0.1</p>
       </div>
     </main>
   );

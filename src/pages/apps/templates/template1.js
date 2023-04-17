@@ -1,9 +1,9 @@
 /* eslint-disable */
 import React, { useState } from "react";
-import Chats from "../components/Chats";
 import Link from "next/link";
+import Buttons from "@/components/Buttons";
 
-function App() {
+function templates1() {
   const [OwnerColor, setOwnerColor] = useState("#ff7b00");
   const [ModeratorColor, setModeratorColor] = useState("#0044ff");
   const [MemberColor, setMemberColor] = useState("#00c41a");
@@ -114,7 +114,6 @@ function App() {
                   >
                     {copied ? "Copied!" : "Copy CSS"}
                   </button>
-                  
                 </div>
               </div>
               <code className="md:max-w-xs h-36 w-[80vw] md:w-72 backdrop-blur-2xl rounded-b-md rounded-bl-md  bg-opacity-5 bg-aksen p-4 relative">
@@ -203,22 +202,14 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center mt-5 flex-col lg:flex-row cursor-pointer">
-        <Link
-          className="hover:ease-in-out hover:duration-300 my-2 lg:mx-2 rounded-lg py-2 px-16 font-semibold text-white align-middle bg-secondary hover:bg-aksen mx-auto"
-          href="/apps/TemplatesMenu"
-        >
-          Templates Menu
-        </Link>
-        <Link
-          className="hover:ease-in-out hover:duration-300 my-2 lg:mx-2 rounded-lg py-2 px-12 font-semibold text-secondary align-middle text-center bg-white hover:bg-aksen hover:text-white"
-          href="/"
-        >
-          Back To Home
-        </Link>
-      </div>
+      <Buttons
+        LinkDir="/"
+        Apah="Back Home"
+        LinkDir1="/apps/templates"
+        Apah1="Templates Menu"
+      />
     </div>
   );
 }
 
-export default App;
+export default templates1;

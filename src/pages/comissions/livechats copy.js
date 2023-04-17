@@ -1,4 +1,4 @@
-export default function livechats(){
+export default function livechatsKah(){
     return (
         <div className="flex flex-col md:flex-row space-y-4 md:space-x-5 md:space-y-0 mt-10">
             <div className="bg-white rounded-2xl px-4 py-10 text-black w-96 flex flex-col justify-center">

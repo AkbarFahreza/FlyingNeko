@@ -1,27 +1,21 @@
 import { useState } from "react";
-import Head from 'next/head';
-import Link from "next/link";
+import LCMenusCard from "./components/LCMenuCards";
 export default function TemplatesMenu() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-
   function handleMouseMove(event) {
     setMousePos({ x: event.clientX, y: event.clientY });
   }
   return (
     <div
+      className="px-4 flex flex-wrap py-5 overflow-hidden"
       onMouseMove={handleMouseMove}
-      className="overflow-hidden min-h-screen flex-col px-10 content-center flex relative justify-center text-center text-secondary"
     >
-      <Head>
-        <title>Fahreza | LiveChat Comissions</title>
-      </Head>
-      <p className="font-bold text-5xl md:text-6xl mb-4 md:mb-10">(っ˘̩╭╮˘̩)っ</p>
-      <p className="font-bold">
-        Halaman masih dalam tahap pengembangan, nantikan yachh!~
-      </p>
-      <Link className="p-2 rounded-md mt-10 bg-aksen hover:bg-secondary text-white mx-auto" href="/">
-        back
-      </Link>
+      <LCMenusCard
+        Tamnel="https://res.cloudinary.com/dxcmt3zoc/image/upload/v1681281078/Tamnel_Fika_1_k0zpnn.png"
+        Judul='[ Template 1 ] Youtube Live Chat Widget/Overlay "Rounded Border"'
+        TemplateLink="https://trakteer.id/Revii/showcase/live-chat-overlay-template-1-svNNs"
+        LinkEdit="templates/template1"
+      />
       <div
         className="transition-all duration-200 ease-in-out absolute top-64"
         style={{ left: mousePos.x, top: mousePos.y }}

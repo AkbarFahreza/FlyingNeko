@@ -1,7 +1,7 @@
 /* eslint-disable */
 import { useState } from "react";
 import Head from 'next/head';
-
+import Buttons from "@/components/Buttons";
 export default function livechatsdummy({ link }) {
   const [copied, setCopied] = useState(false);
 
@@ -45,20 +45,8 @@ export default function livechatsdummy({ link }) {
             </li>
             <li>Lalu Klik Tombol "Chats", "Suppa", "Member", "Gift"</li>
           </ul>
-          <div className="flex justify-center mt-5 flex-col lg:flex-row cursor-pointer">
-            <a
-              className="hover:ease-in-out hover:duration-300 my-2 lg:mx-2 text-center rounded-lg py-2 px-16 font-semibold text-white align-middle bg-secondary hover:bg-aksen mx-auto"
-              href="/" 
-            >
-              Back To Main Page
-            </a>
-            <a
-              className="hover:ease-in-out hover:duration-300 my-2 lg:mx-2 rounded-lg py-2 px-12 font-semibold text-secondary align-middle text-center bg-white hover:bg-aksen hover:text-white"
-              href="https://reza-youtube-livechatdemo.netlify.app/" target="_blank"
-            >
-              Open Chat On New Tab
-            </a>
-          </div>
+
+          <Buttons LinkDir='/' Apah="Back To Home" LinkDir1='https://reza-youtube-livechatdemo.netlify.app/' Apah1="Open Chat On New Tab" />
         </div>
         <iframe
           className="h-[50vh] md:h-[80vh] w-full md:w-1/2 border-aksen border-solid border-2"
