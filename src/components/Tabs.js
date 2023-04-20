@@ -22,11 +22,23 @@ export default function TabsSection() {
         </TabList>
         <div className="mt-5 mb-5 px-3">
           <TabPanel className="align-middle">
-            <CobaDeh Mana="cimissions/livechats" Nganu="Customizing LiveChat" TombolNganu="More"></CobaDeh>
+            <CobaDeh
+              Mana="commissions/livechat"
+              Nganu="Customizing LiveChat"
+              TombolNganu="More"
+            ></CobaDeh>
           </TabPanel>
           <TabPanel className="align-middle space-y-2">
-            <CobaDeh Mana="apps/templates" Nganu="Youtube LiveChat Templates Color Editor" TombolNganu="Try"></CobaDeh>
-            <CobaDeh Mana="apps/livechatsdummy" Nganu="Youtube Livechat Demo" TombolNganu="Try"></CobaDeh>
+            <CobaDeh
+              Mana="apps/templates"
+              Nganu="Youtube LiveChat Templates Color Editor"
+              TombolNganu="Try"
+            ></CobaDeh>
+            <CobaDeh
+              Mana="apps/livechatsdummy"
+              Nganu="Youtube Livechat Demo"
+              TombolNganu="Try"
+            ></CobaDeh>
           </TabPanel>
         </div>
       </Tabs>
