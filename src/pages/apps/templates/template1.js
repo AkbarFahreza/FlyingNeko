@@ -37,12 +37,323 @@ function templates1() {
   };
   const updateCss = () => {
     const newCss = `
+    @import url("https://fonts.googleapis.com/css?family=Changa One");
+    @import url("https://fonts.googleapis.com/css?family=Imprima");
       :root {
         --owner-color: ${OwnerColor};
         --moderator-color: ${ModeratorColor};
         --member-color: ${MemberColor};
         --general-color: ${GeneralColor};
     }
+    body {
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, 0);
+    }
+    
+    yt-live-chat-renderer {
+      background-color: transparent !important;
+    }
+    
+    yt-live-chat-text-message-renderer #content {
+      display: flex;
+      flex-direction: column;
+      max-width: 75% !important;
+      padding-left: 20px;
+    }
+    
+    #content,
+    yt-live-chat-text-message-renderer {
+      animation-name: animation;
+      animation-duration: 1.5s;
+    }
+    
+    @keyframes animation {
+      0% {
+        transform: scale(0) translateX(0);
+      }
+      30% {
+        transform: scale(100%) translateX(-30px);
+      }
+    }
+    
+    /* Isi Pesan member biasa */
+    
+    yt-live-chat-text-message-renderer #message {
+      margin-top: -25px;
+      border: 2px solid var(--general-color) !important;
+      font-family: "Imprima";
+      padding: 20px;
+      border-radius: 0px 20px 20px 20px;
+      background-color: #fff !important;
+      color: #000 !important;
+    }
+    
+    /* Isi Pesan Owner */
+    
+    yt-live-chat-text-message-renderer[author-type="owner"] #message {
+      font-family: "Imprima";
+      padding: 20px;
+      border-radius: 0px 20px 20px 20px;
+      background-color: var(--owner-color) !important;
+      color: #fff !important;
+      border: 0px solid #fff !important;
+    }
+    
+    /* Isi Pesan Moderator */
+    
+    yt-live-chat-text-message-renderer[author-type="moderator"] #message {
+      padding: 20px;
+      font-family: "Imprima";
+      border-radius: 0px 20px 20px 20px;
+      background-color: var(--moderator-color) !important;
+      border: 0px solid #fff !important;
+      color: #fff !important;
+    }
+    
+    /* Isi Pesan Membership */
+    
+    yt-live-chat-text-message-renderer[author-type="member"] #message {
+      padding: 20px;
+      font-family: "Imprima";
+      border-radius: 0px 20px 20px 20px;
+      border: 0px solid #fff !important;
+      background-color: var(--member-color) !important;
+      color: #fff !important;
+    }
+    
+    yt-live-chat-text-message-renderer,
+    yt-live-chat-text-message-renderer[is-highlighted] {
+      background-color: transparent !important;
+    }
+    
+    yt-live-chat-text-message-renderer[author-type="owner"],
+    yt-live-chat-text-message-renderer[author-type="owner"][is-highlighted] {
+      background-color: transparent !important;
+    }
+    
+    yt-live-chat-text-message-renderer[author-type="moderator"],
+    yt-live-chat-text-message-renderer[author-type="moderator"][is-highlighted] {
+      background-color: transparent !important;
+    }
+    
+    yt-live-chat-text-message-renderer[author-type="member"],
+    yt-live-chat-text-message-renderer[author-type="member"][is-highlighted] {
+      background-color: transparent !important;
+    }
+    
+    yt-live-chat-author-chip #author-name {
+      background-color: transparent !important;
+    }
+    
+    yt-live-chat-renderer * {
+      font-weight: bold !important;
+      font-family: "Imprima";
+      font-size: 18px !important;
+      line-height: normalpx !important;
+    }
+    
+    yt-live-chat-text-message-renderer #content,
+    yt-live-chat-legacy-paid-message-renderer #content {
+      overflow: initial !important;
+    }
+    
+    yt-live-chat-item-list-renderer #items {
+      overflow: hidden !important;
+    }
+    
+    yt-live-chat-item-list-renderer #item-scroller {
+      overflow: hidden !important;
+    }
+    
+    yt-live-chat-header-renderer,
+    yt-live-chat-message-input-renderer {
+      display: none !important;
+    }
+    
+    yt-live-chat-text-message-renderer,
+    yt-live-chat-legacy-paid-message-renderer {
+      padding-left: 4px !important;
+      padding-right: 4px !important;
+    }
+    
+    yt-live-chat-paid-message-renderer #header {
+      padding-left: 4px !important;
+      padding-right: 4px !important;
+    }
+    
+    yt-live-chat-text-message-renderer #author-photo,
+    yt-live-chat-paid-message-renderer #author-photo,
+    yt-live-chat-legacy-paid-message-renderer #author-photo {
+      display: none !important;
+      width: 24px !important;
+      height: 24px !important;
+      border-radius: 24px !important;
+      margin-right: 6px !important;
+    }
+    
+    yt-live-chat-text-message-renderer #author-badges {
+      display: none !important;
+      vertical-align: text-top !important;
+    }
+    
+    yt-live-chat-text-message-renderer #timestamp {
+      color: #ffffff !important;
+      font-family: "Imprima";
+      font-size: 16px !important;
+      line-height: 16px !important;
+    }
+    
+    /* Nama channel owner */
+    
+    yt-live-chat-text-message-renderer #author-name[type="owner"],
+    yt-live-chat-text-message-renderer #author-name.owner,
+    yt-live-chat-text-message-renderer
+      yt-live-chat-author-badge-renderer[type="owner"] {
+      color: var(--owner-color) !important;
+      border: 2px solid var(--owner-color);
+      background-color: #fff !important;
+      padding: 10px !important;
+      border-radius: 20px 20px 20px 0px !important;
+    }
+    
+    /* Nama channel moderator */
+    
+    yt-live-chat-text-message-renderer #author-name[type="moderator"],
+    yt-live-chat-text-message-renderer #author-name.moderator {
+      color: var(--moderator-color) !important;
+      border: 2px solid var(--moderator-color);
+      background-color: #fff !important;
+      padding: 10px !important;
+      border-radius: 20px 20px 20px 0px !important;
+    }
+    
+    /* Buat ngilangiin badge tang biru */
+    
+    yt-live-chat-text-message-renderer
+      yt-live-chat-author-badge-renderer[type="moderator"] {
+      display: none !important;
+    }
+    
+    /* Nama channel membership */
+    
+    yt-live-chat-text-message-renderer #author-name[type="member"],
+    yt-live-chat-text-message-renderer #author-name.member,
+    yt-live-chat-text-message-renderer
+      yt-live-chat-author-badge-renderer[type="member"] {
+      border: 2px solid var(--member-color);
+      color: var(--member-color) !important;
+      background-color: #fff !important;
+      padding: 10px !important;
+      border-radius: 20px 20px 20px 0px !important;
+    }
+    
+    /* Nama channel viewer biasa */
+    
+    yt-live-chat-text-message-renderer #author-name {
+      background-color: var(--general-color) !important;
+      border: 2px solid var(--general-color);
+      padding: 10px !important;
+      border-radius: 20px 20px 20px 0px !important;
+      color: #fff !important;
+      font-family: "Changa One";
+      font-size: 20px !important;
+      line-height: 20px !important;
+    }
+    
+    /* Isi pesan */
+    
+    yt-live-chat-text-message-renderer #message,
+    yt-live-chat-text-message-renderer #message * {
+      color: #000000 !important;
+      font-family: "Imprima";
+      font-size: 18px !important;
+      line-height: normalpx !important;
+      letter-spacing: normalpx !important;
+    }
+    
+    yt-live-chat-paid-message-renderer #author-name,
+    yt-live-chat-paid-message-renderer #author-name *,
+    yt-live-chat-legacy-paid-message-renderer #event-text,
+    yt-live-chat-legacy-paid-message-renderer #event-text * {
+      color: #ffffff !important;
+      font-family: "Changa One";
+      font-size: 20px !important;
+      line-height: 20px !important;
+    }
+    
+    yt-live-chat-paid-message-renderer #purchase-amount,
+    yt-live-chat-paid-message-renderer #purchase-amount *,
+    yt-live-chat-legacy-paid-message-renderer #detail-text,
+    yt-live-chat-legacy-paid-message-renderer #detail-text * {
+      color: #ffffff !important;
+      font-family: "Imprima";
+      font-size: 18px !important;
+      line-height: 18px !important;
+    }
+    
+    yt-live-chat-paid-message-renderer #content,
+    yt-live-chat-paid-message-renderer #content * {
+      color: #ffffff !important;
+      font-family: "Imprima";
+      font-size: 18px !important;
+      line-height: 18px !important;
+    }
+    
+    yt-live-chat-moderation-message-renderer {
+      display: none !important;
+    }
+    
+    yt-live-chat-paid-message-renderer {
+      margin: 4px 0 !important;
+    }
+    
+    yt-live-chat-legacy-paid-message-renderer {
+      background-color: var(--member-color) !important;
+      margin: 4px 0 !important;
+    }
+    
+    yt-live-chat-text-message-renderer a,
+    yt-live-chat-legacy-paid-message-renderer a {
+      text-decoration: none !important;
+    }
+    
+    yt-live-chat-text-message-renderer[is-deleted],
+    yt-live-chat-legacy-paid-message-renderer[is-deleted] {
+      display: none !important;
+    }
+    
+    yt-live-chat-ticker-renderer {
+      background-color: transparent !important;
+      box-shadow: none !important;
+    }
+    
+    yt-live-chat-ticker-renderer {
+      display: none !important;
+    }
+    
+    yt-live-chat-ticker-paid-message-item-renderer,
+    yt-live-chat-ticker-paid-message-item-renderer *,
+    yt-live-chat-ticker-sponsor-item-renderer,
+    yt-live-chat-ticker-sponsor-item-renderer * {
+      color: #ffffff !important;
+      font-family: "Imprima";
+    }
+    
+    yt-live-chat-mode-change-message-renderer,
+    yt-live-chat-viewer-engagement-message-renderer,
+    yt-live-chat-restricted-participation-renderer {
+      display: none !important;
+    }
+    
+    yt-live-chat-banner-manager {
+      display: none !important;
+    }
+    
+    yt-live-chat-action-panel-renderer,
+    yt-live-chat-renderer #action-panel {
+      display: none !important;
+    }
+    
     `;
     setCss(newCss);
   };
@@ -116,7 +427,7 @@ function templates1() {
                   </button>
                 </div>
               </div>
-              <code className="md:max-w-xs h-36 w-[80vw] md:w-72 backdrop-blur-2xl rounded-b-md rounded-bl-md  bg-opacity-5 bg-aksen p-4 relative">
+              <code className="md:max-w-xs h-36 w-[80vw] overflow-scroll md:w-72 backdrop-blur-2xl rounded-b-md rounded-bl-md  bg-opacity-5 bg-aksen p-4 relative">
                 <p>{css}</p>
               </code>
               <div className="-z-50">

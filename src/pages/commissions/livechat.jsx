@@ -50,7 +50,7 @@ export default function livechatsKah() {
             className="font-bold p-4 mt-6 text-center hover:ease-in-out hover:duration-300 rounded-full mx-auto bg-white hover:bg-aksen text-secondary hover:text-white"
             href="https://twitter.com/Revernry"
           >
-            Mulai Dari IDR 85K
+            DM Twitter detail harga
           </a>
         </Card>
       </div>
