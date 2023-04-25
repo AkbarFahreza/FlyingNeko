@@ -30,13 +30,13 @@ export default function TabsSection() {
           </TabPanel>
           <TabPanel className="align-middle space-y-2">
             <CobaDeh
-              Mana="apps/templates"
-              Nganu="Youtube LiveChat Templates Color Editor"
+              Mana="apps/livechatsdummy"
+              Nganu="Youtube Livechat Dummy"
               TombolNganu="Try"
             ></CobaDeh>
             <CobaDeh
-              Mana="apps/livechatsdummy"
-              Nganu="Youtube Livechat Demo"
+              Mana="apps/templates"
+              Nganu="Youtube LiveChat Templates Color Editor"
               TombolNganu="Try"
             ></CobaDeh>
           </TabPanel>
