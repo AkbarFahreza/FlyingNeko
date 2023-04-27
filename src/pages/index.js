@@ -48,7 +48,7 @@ export default function Home() {
       />
       <TabsSection />
       <div className="sticky bg-white px-2 py-1 text-black rounded-md mt-5 flex justify-center text-center">
-        <p>Ver : 1.2.1</p>
+        <p>Ver : 1.3.1</p>
       </div>
     </main>
   );
