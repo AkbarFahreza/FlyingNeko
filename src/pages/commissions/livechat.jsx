@@ -41,7 +41,7 @@ export default function livechatsKah({ data }) {
         >
           <a
             className="font-bold p-4 text-center hover:ease-in-out hover:duration-300 rounded-full mx-auto bg-secondary hover:bg-aksen"
-            href="https://twitter.com/Revernry"
+            href="https://twitter.com/messages/1356941102247333890-1356941102247333890"
           >
             Mulai Dari IDR 70K
           </a>
@@ -56,7 +56,7 @@ export default function livechatsKah({ data }) {
         >
           <a
             className="font-bold p-4 mt-6 text-center hover:ease-in-out hover:duration-300 rounded-full mx-auto bg-white hover:bg-aksen text-secondary hover:text-white"
-            href="https://twitter.com/Revernry"
+            href="https://twitter.com/messages/1356941102247333890-1356941102247333890"
           >
             DM Twitter detail harga
           </a>
