@@ -29,7 +29,7 @@ export default function livechatsKah({ data }) {
   return (
     <div className="grid grid-cols-1 justify-center gap-4">
       <p className="text-center font-bold text-xl md:text-3xl  m-6">
-        Berikut adalah Price Lists serta beberapa protfolio saya
+        Berikut adalah Price Lists serta beberapa portofolio saya
       </p>
       <div className=" scale-75 md:scale-100 mx-auto grid mb-10 grid-cols-1 md:grid-cols-2 gap-4 -mt-32 md:-mt-0">
         <Card
