@@ -16,6 +16,12 @@ export default function TemplatesMenu() {
         TemplateLink="https://trakteer.id/Revii/showcase/live-chat-overlay-template-1-svNNs"
         LinkEdit="templates/template1"
       />
+      <LCMenusCard
+        Tamnel="https://res.cloudinary.com/dxcmt3zoc/image/upload/v1683346787/Screenshot_from_2023-05-06_11-18-14_raasoo.png"
+        Judul="[ Target Goal ] Trakteer Target Goal CSS"
+        TemplateLink="https://trakteer.id/Revii"
+        LinkEdit="templates/Trakteer-target-goal"
+      />
       <div
         className="transition-all duration-200 ease-in-out absolute top-64"
         style={{ left: mousePos.x, top: mousePos.y }}
