@@ -21,6 +21,23 @@ export default function handler(req, res) {
       videoLink: "https://www.youtube.com/watch?v=L6fxox0CBTs",
     },
     {
+      client: "Wintergea Ch. 【Yorukaze】",
+      images: [
+        "https://res.cloudinary.com/dxcmt3zoc/image/upload/v1684035466/Frame_5_6_egqzrs.png",
+        "https://res.cloudinary.com/dxcmt3zoc/image/upload/v1684034742/Screenshot_from_2023-05-14_09-30-56_oxgjoo.png",
+        "https://res.cloudinary.com/dxcmt3zoc/image/upload/v1684034740/Screenshot_from_2023-05-14_09-33-16_ogesrw.png",
+      ],
+      videoLink: "https://www.youtube.com/watch?v=Kq_Sjyd_GnI&t=2849s",
+    },
+    {
+      client: "Hafidh Hizora Ch.",
+      images: [
+        "https://res.cloudinary.com/dxcmt3zoc/image/upload/v1684036866/Frame_2_6_bbp43u.png",
+        "https://res.cloudinary.com/dxcmt3zoc/image/upload/v1684033647/Screenshot_from_2023-05-14_09-42-54_ipyght.png",
+      ],
+      videoLink: "https://www.youtube.com/watch?v=UZBNzoBScx4&t=810s",
+    },
+    {
       client: "Namamu Nanti Disini ☝️😅",
       images: [
         "https://res.cloudinary.com/dxcmt3zoc/image/upload/v1682599404/Frame_5_v8moik.png",

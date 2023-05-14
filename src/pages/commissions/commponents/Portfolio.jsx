@@ -6,6 +6,7 @@ import Image from "next/image";
 
 export async function getStaticProps() {
   const response = await fetch("https://reeza.netlify.app/api/Pwirtifilii");
+  // const response = await fetch("http://localhost:3000/api/Pwirtifilii");
   const data = await response.json();
 
   return {
@@ -17,12 +18,12 @@ export async function getStaticProps() {
 const Portfolio = (props) => {
   const { data } = props;
   return (
-    <div className="mx-auto flex justify-center -mt-32 md:-mt-0">
+    <div className="mx-auto flex justify-center -mt-32 md:-mt-0  p-2">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 rounded-sm">
         {data.map((item) => (
           <div
             key={item.client}
-            className="w-96 h-auto flex flex-col justify-center bg-secondary"
+            className="w-72 md:w-96 h-auto flex flex-col justify-center bg-secondary"
           >
             <Carousel autoPlay infiniteLoop showArrows={false}>
               {item.images.map((image) => (
@@ -32,7 +33,7 @@ const Portfolio = (props) => {
                   alt={item.client}
                   width={500}
                   height={500}
-                  className="w-ful h-auto"
+                  className=" w-full h-full bg-cover"
                 />
               ))}
             </Carousel>

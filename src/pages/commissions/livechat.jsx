@@ -7,6 +7,7 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 import Portfolio from "./commponents/Portfolio";
 export async function getStaticProps() {
   const response = await fetch("https://reeza.netlify.app/api/Pwirtifilii");
+  // const response = await fetch("http://localhost:3000/api/Pwirtifilii");
   const data = await response.json();
 
   return {
@@ -27,7 +28,7 @@ export default function livechatsKah({ data }) {
     "• Bentuk dan warna bisa disesuaikan dengan permintaan",
   ];
   return (
-    <div className="grid grid-cols-1 justify-center gap-4">
+    <div className="grid grid-cols-1 justify-center gap-4 scrollbar-track-secondary">
       <p className="text-center font-bold text-xl md:text-3xl  m-6">
         Berikut adalah Price Lists serta beberapa portofolio saya
       </p>
