@@ -6,7 +6,6 @@ import Image from "next/image";
 
 export async function getStaticProps() {
   const response = await fetch("https://reeza.netlify.app/api/Pwirtifilii");
-  // const response = await fetch("http://localhost:3000/api/Pwirtifilii");
   const data = await response.json();
 
   return {
