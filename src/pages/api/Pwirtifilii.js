@@ -38,6 +38,22 @@ export default function handler(req, res) {
       videoLink: "https://www.youtube.com/watch?v=UZBNzoBScx4&t=810s",
     },
     {
+      client: "Zizana Laskaris【VTuber】",
+      images: [
+        "https://res.cloudinary.com/dxcmt3zoc/image/upload/v1684735109/Screenshot_from_2023-05-22_12-57-06_i1ftq7.png",
+        "https://res.cloudinary.com/dxcmt3zoc/image/upload/v1684735110/Screenshot_from_2023-05-22_12-50-44_qlncp8.png",
+      ],
+      videoLink: "https://www.youtube.com/live/WsixwsGaocs?feature=share",
+    },
+    {
+      client: "Grind Misfortune Ch.",
+      images: [
+        "https://res.cloudinary.com/dxcmt3zoc/image/upload/v1684735678/Screenshot_from_2023-05-22_13-07-39_pbrwk0.png",
+        "https://res.cloudinary.com/dxcmt3zoc/image/upload/v1684735681/Screenshot_from_2023-05-22_13-05-46_gpr0vf.png",
+      ],
+      videoLink: "https://www.youtube.com/live/WsixwsGaocs?feature=share",
+    },
+    {
       client: "Namamu Nanti Disini ☝️😅",
       images: [
         "https://res.cloudinary.com/dxcmt3zoc/image/upload/v1682599404/Frame_5_v8moik.png",
