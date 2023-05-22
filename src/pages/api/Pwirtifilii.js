@@ -54,6 +54,15 @@ export default function handler(req, res) {
       videoLink: "https://www.youtube.com/live/WsixwsGaocs?feature=share",
     },
     {
+      client: "Nekonyan Aimi Ch. 爱美",
+      images: [
+        "https://res.cloudinary.com/dxcmt3zoc/image/upload/v1684739473/Screenshot_from_2023-05-22_14-05-28_yc0y0p.png",
+        "https://res.cloudinary.com/dxcmt3zoc/image/upload/v1684739476/Screenshot_from_2023-05-22_14-10-39_ysmnvc.png",
+        "https://res.cloudinary.com/dxcmt3zoc/image/upload/v1684739476/Screenshot_from_2023-05-22_14-08-35_sqjorm.png",
+      ],
+      videoLink: "https://www.youtube.com/watch?v=jV6nMzOAdaE&t=2618s",
+    },
+    {
       client: "Namamu Nanti Disini ☝️😅",
       images: [
         "https://res.cloudinary.com/dxcmt3zoc/image/upload/v1682599404/Frame_5_v8moik.png",
