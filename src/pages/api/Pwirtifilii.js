@@ -63,6 +63,15 @@ export default function handler(req, res) {
       videoLink: "https://www.youtube.com/watch?v=jV6nMzOAdaE&t=2618s",
     },
     {
+      client: "Narra Arraesya Ch.",
+      images: [
+        "https://res.cloudinary.com/dxcmt3zoc/image/upload/v1685602606/Screenshot_from_2023-06-01_13-56-27_iuyexi.png",
+        "https://res.cloudinary.com/dxcmt3zoc/image/upload/v1685602415/Screenshot_from_2023-06-01_13-48-12_cyktrc.png",
+        "https://res.cloudinary.com/dxcmt3zoc/image/upload/v1685602414/Screenshot_from_2023-06-01_13-49-12_ynmb4p.png",
+      ],
+      videoLink: "https://www.youtube.com/@narraesya",
+    },
+    {
       client: "Namamu Nanti Disini ☝️😅",
       images: [
         "https://res.cloudinary.com/dxcmt3zoc/image/upload/v1682599404/Frame_5_v8moik.png",

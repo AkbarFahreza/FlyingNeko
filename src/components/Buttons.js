@@ -1,6 +1,13 @@
-export default function Buttons({ LinkDir, Apah,LinkDir1, Apah1 }) {
+export default function Buttons({
+  LinkDir,
+  Apah,
+  LinkDir1,
+  Apah1,
+  LinkDir2,
+  Apah2,
+}) {
   return (
-    <div className="flex justify-center mt-5 flex-col lg:flex-row cursor-pointer">
+    <div className="flex justify-center mt-5 flex-col lg:flex-row cursor-pointer text-center">
       <a
         className="hover:ease-in-out hover:duration-300 my-2 lg:mx-2 rounded-lg py-2 px-16 font-semibold text-white align-middle bg-secondary hover:bg-aksen mx-auto"
         href={LinkDir}

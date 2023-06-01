@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import Portfolio from "./commponents/Portfolio";
+
 export async function getStaticProps() {
   const response = await fetch("https://reeza.netlify.app/api/Pwirtifilii");
   const data = await response.json();
@@ -15,6 +16,7 @@ export async function getStaticProps() {
     },
   };
 }
+
 export default function livechatsKah({ data }) {
   const Basic = [
     "• Chat only (Supperchat Dll. style default dari YouTube)",
@@ -26,6 +28,7 @@ export default function livechatsKah({ data }) {
     "• Support pembeda warna antara : Owner, Moderator, Viewer biasa, dan membership",
     "• Bentuk dan warna bisa disesuaikan dengan permintaan",
   ];
+
   return (
     <div className="grid grid-cols-1 justify-center gap-4 scrollbar-track-secondary">
       <p className="text-center font-bold text-xl md:text-3xl  m-6">
@@ -58,10 +61,11 @@ export default function livechatsKah({ data }) {
             className="font-bold p-4 mt-6 text-center hover:ease-in-out hover:duration-300 rounded-full mx-auto bg-white hover:bg-aksen text-secondary hover:text-white"
             href="https://twitter.com/messages/1356941102247333890-1356941102247333890"
           >
-            DM Twitter detail harga
+            Mulai Dari IDR 120K
           </a>
         </Card>
       </div>
+
       <Portfolio data={data} />
       <div className="flex justify-center py-5  mx-auto space-x-4 align-middle cursor-pointer">
         <a className="" href="/">

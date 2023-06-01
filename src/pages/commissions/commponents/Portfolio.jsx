@@ -24,7 +24,12 @@ const Portfolio = (props) => {
             key={item.client}
             className="w-72 md:w-96 h-auto flex flex-col justify-center bg-secondary"
           >
-            <Carousel autoPlay infiniteLoop showArrows={false}>
+            <Carousel
+              autoPlay
+              infiniteLoop
+              showThumbs={false}
+              showArrows={false}
+            >
               {item.images.map((image) => (
                 <Image
                   key={image}
